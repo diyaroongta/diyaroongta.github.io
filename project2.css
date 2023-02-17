@@ -52,4 +52,8 @@ a {
   width: 857px;
   height: 207px;
   background-image: url(pics/accessibilityoverviewbanner.png);
+  color: black
+}
+.textcolor{
+  color: black
 }
