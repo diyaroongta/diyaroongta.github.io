@@ -51,9 +51,15 @@
   <!-- Add a landmark for the sign-up section -->
   <section>
     <h2 id="signup">Sign Up!</h2>
-    <form id="sign-up-form">
+    <form id="sign-up-form" action="submit-form.php" method="post">
       <p>
-        <span id="name">Name:</span>  <input name="fn" type="text" size="10" id="fn"> <input name="mi" type="text" size="1" id="mi">. <input name="ln" type="text" size="10" id="ln"><br>
+        <p>
+        <label for="fn">First Name:</label>
+        <input name="fn" type="text" size="10" id="fn">
+        <label for="mi">Middle Initial:</label>
+        <input name="mi" type="text" size="1" id="mi">
+        <label for="ln">Last Name:</label>
+        <input name="ln" type="text" size="10" id="ln"><br>
       </p>
       <p>
         <span id="email">Email:</span> <input id="em" name="em" type="text" size="20">
