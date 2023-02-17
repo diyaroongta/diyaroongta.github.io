@@ -11,11 +11,10 @@
 
 <!-- Add a landmark for the main content section -->
 <main>
-  <!-- Add a heading for the page title -->
-  <h1>Accessibility Course Overview</h1>
 
   <!-- Add a landmark for the navigation section -->
   <nav>
+    <!-- Add a div to describe the content -->
     <div class="offscreen">Main Content</div>
     <div class="container">
       <div class="navigation">
@@ -35,42 +34,48 @@
       <source src="employment-movie.mp4" type="video/mp4">
     </video>
     <div id="videoplayer" tabindex="5">
-      <img width="50px" height="50px" src="pics/play.png" alt="Play button">">
+      <img width="50px" height="50px" src="pics/play.png" alt="Play button">
     </div>
   </section>
 
   <!-- Add a landmark for the links section -->
   <section>
     <h2 id="links">Links</h2>
-    <img src="pics/dot.png" alt="Bullet point">&nbsp;<a href="https://www.barnardhci.com">Accessibility Research at Hamilton</a><br>
-    <img src="pics/dot.png" alt="Bullet point">&nbsp;<a href="https://www.hamilton.edu/offices/dos/accessibility">Disability Services at Hamilton</a><br>
-    <img src="pics/dot.png" alt="Bullet point">&nbsp;<a href="https://xkcd.com/">XKCD</a><br>
-    <img src="pics/dot.png" alt="Bullet point">&nbsp;<a href="https://www.youtube.com/watch?v=HtTyRajRuyY">A11ycasts Videos</a>
+    <ul>
+      <li><a href="https://www.barnardhci.com">Accessibility Research at Hamilton</a></li>
+      <li><a href="https://www.hamilton.edu/offices/dos/accessibility">Disability Services at Hamilton</a></li>
+      <li><a href="https://xkcd.com/">XKCD</a></li>
+      <li><a href="https://www.youtube.com/watch?v=HtTyRajRuyY">A11ycasts Videos</a></li>
+    </ul>
   </section>
 
   <!-- Add a landmark for the sign-up section -->
   <section>
     <h2 id="signup">Sign Up!</h2>
     <form id="sign-up-form" action="submit-form.php" method="post">
-      <p>
+      <fieldset>
+        <legend>Contact Information</legend>
         <p>
-        <label for="fn">First Name:</label>
-        <input name="fn" type="text" size="10" id="fn">
-        <label for="mi">Middle Initial:</label>
-        <input name="mi" type="text" size="1" id="mi">
-        <label for="ln">Last Name:</label>
-        <input name="ln" type="text" size="10" id="ln"><br>
-      </p>
-      <p>
-        <span id="email">Email:</span> <input id="em" name="em" type="text" size="20">
-      </p>
-      <p>
-        <span id="spamtext">Would you like to receive occassional emails with offers from us?</span>
-        <div id="receivespambutton">
+          <label for="fn">First Name:</label>
+          <input name="fn" type="text" size="10" id="fn">
+          <label for="mi">Middle Initial:</label>
+          <input name="mi" type="text" size="1" id="mi">
+          <label for="ln">Last Name:</label>
+          <input name="ln" type="text" size="10" id="ln">
+        </p>
+        <p>
+          <label for="em">Email:</label>
+          <input name="em" type="email" size="20" id="em">
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Additional Information</legend>
+        <p>
+          <label for="spamyn">Would you like to receive occasional emails with offers from us?</span>
+          <div id="receivespambutton">
           <img src="pics/checked.png" alt="Checked checkbox">
         </div>
-        <input type="hidden" name="spamyn" id="spamyn"
-               
+        <input type="hidden" name="spamyn" id="spamyn"     
   Comments:<br>
   <textarea rows="5" cols="40"></textarea>
 </p>
