@@ -26,7 +26,7 @@ $(document).ready(function() {
 
   // Form validation
   $("#signupbutton").click(function() {
-    if($("#fn").val()=="" || $("#mi").val()=="" || $("#ln").val()=="") {
+    if($("#first name").val()=="" || $("#middle initial").val()=="" || $("#last name").val()=="") {
       $("#name").addClass("error");
 
       return;
