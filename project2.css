@@ -51,8 +51,8 @@ a {
 }
 
 #accessibilitybanner {
-  width: 857px;
-  height: 207px;
+  width: auto;
+  height: auto;
   background-image: url(pics/accessibilityoverviewbanner.png);
   color: black;
 }
