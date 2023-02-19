@@ -23,27 +23,34 @@ $(document).ready(function() {
       $("#thevideo")[0].pause();
     }
   });
+// Form validation
+$("#signupbutton").click(function() {
+  var isChecked = $("#spamyn").prop("checked");
+  var additionalInfo = $("#additional-info").val();
 
-  // Form validation
-  $("#signupbutton").click(function() {
-    if($("#first name").val()=="" || $("#middle initial").val()=="" || $("#last name").val()=="") {
-      $("#name").addClass("error");
-      alert("Please fill out all fields.");
-      return;
-    } else {
-      $("#name").removeClass("error");
-    }
+  if ($("#first-name").val() == "" || $("#last-name").val() == "") {
+    $("#name").addClass("error");
+    alert("Please fill out all name fields.");
+    return;
+  } else {
+    $("#name").removeClass("error");
+  }
 
-    if($("#em").val()=="") {
-      $("#email").addClass("error");
+  if ($("#email").val() == "") {
+    $("#email").addClass("error");
+    alert("Please fill out the email field.");
+    return;
+  } else {
+    $("#email").removeClass("error");
+  }
 
-      return;
-    } else {
-      $("#name").removeClass("error");
-    }
+  if (!isChecked) {
+    alert("Please opt in to receive occasional emails with offers from us.");
+    return;
+  }
 
-    alert("Thank you!  Please watch your email for our exciting newsletter and offers!");
-  });
+  alert("Thank you for subscribing to our " + (isChecked ? "promotions" : "newsletters") + "! " + (additionalInfo ? ("Additional Information: " + additionalInfo) : ""));
+  $(this).attr("aria-pressed", "true");
 });
 
 
