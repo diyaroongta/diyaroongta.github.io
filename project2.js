@@ -28,7 +28,7 @@ $(document).ready(function() {
   $("#signupbutton").click(function() {
     if($("#first name").val()=="" || $("#middle initial").val()=="" || $("#last name").val()=="") {
       $("#name").addClass("error");
-
+      alert("Please fill out all fields.");
       return;
     } else {
       $("#name").removeClass("error");
