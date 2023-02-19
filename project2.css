@@ -36,6 +36,11 @@ a {
 }
 
 .navigation-a {
+  outline: none;
+  position: heading;
+}
+
+.nav-link {
   color: blue;
   text-decoration: underline;
 }
