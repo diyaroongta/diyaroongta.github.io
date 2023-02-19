@@ -36,8 +36,8 @@ a {
 }
 
 .navigation a {
-  outline: none;
-  position: heading;
+  color: blue;
+  text-decoration: underline;
 }
 
 #videoplayer {
@@ -59,3 +59,4 @@ a {
 .textcolor{
   color: black;
 }
+
